@@ -15,7 +15,7 @@ public class TileController : MonoBehaviour
     void Start()
     {
         tiles = new List<GameObject>();
-        float tileSpawnOffset = 5f;
+        float tileSpawnOffset = 5f;  // Offsets the first spawn to the left (and adjusts the last accordingly)
 
         // Spawn new tiles
         float tileSpawnTracker = Camera.main.ScreenToWorldPoint(Vector3.zero).x;
